@@ -14,8 +14,8 @@ if kod_soucastky not in sklad:
 elif pocet_zbozi > sklad[kod_soucastky]:
     print(f"Na skladě NENÍ dostatek zboží, lze prodat jen: {sklad[kod_soucastky]} ks.")
     sklad.pop(kod_soucastky)
-    print(sklad)
-elif pocet_zbozi <= sklad[kod_soucastky]:
+#    print(sklad)
+else:
     print(f"Na skladě je dostatečné množství součástky s kódem: {kod_soucastky}.")
     sklad[kod_soucastky] = sklad[kod_soucastky] - pocet_zbozi
-    print(sklad)
+#    print(sklad)
